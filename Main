@@ -1,0 +1,62 @@
+package Clases;
+
+import Herencia.Smartphone;
+
+public class Main {
+    public static void main(String[] args) {
+
+        SmartDevice SamsungA10 = new SmartDevice();
+
+        Procesador procesadorGti = new Procesador();
+
+        SmartDevice SamsungS10 = new SmartDevice(true,true,true,"Android",procesadorGti);
+
+        System.out.println("Samsung S10");
+        System.out.println( "bluetooth " + SamsungS10.bluetooth);
+        System.out.println("wifi " + SamsungS10.wifi);
+        System.out.println("touchable " + SamsungS10.touchable);
+        System.out.println("software " +  SamsungS10.touchable);
+         System.out.println("countSteps " + SamsungS10.countSteps);
+         System.out.println("pulsometer " + SamsungS10.pulsometer);
+
+        System.out.println("\nSamsung A10");
+        System.out.println("bluetooth " + SamsungA10.bluetooth);
+        System.out.println("wifi " + SamsungA10.wifi);
+        System.out.println("touchable " + SamsungA10.touchable);
+        System.out.println("software " + SamsungA10.software);
+         System.out.println("countSteps " + SamsungA10.countSteps);
+          System.out.println("pulsometer " + SamsungA10.pulsometer);
+
+
+
+
+        Smartphone iPhone5 = new Smartphone(true,true,true,"Ios",procesadorGti,true,true,true,true,"apple");
+        Smartphone samsungA55 = new Smartphone();
+        samsungA55.brand = "Samsung";
+
+        System.out.println("\niPhone5");
+        System.out.println("bluetooth " + iPhone5.bluetooth);
+        System.out.println("wifi " + iPhone5.wifi);
+        System.out.println("touchable " + iPhone5.touchable);
+        System.out.println("software " + iPhone5.software);
+        System.out.println("camera " + iPhone5.camera);
+        System.out.println("fingerprint " + iPhone5.fingerprint);
+        System.out.println("phonecalls " + iPhone5.phonecalls);
+        System.out.println("textMessages " + iPhone5.textMessages);
+        System.out.println("brand " + iPhone5.brand);
+
+
+
+        System.out.println("\nSamsung A55");
+        System.out.println("bluetooth " + samsungA55.bluetooth);
+        System.out.println("wifi " + samsungA55.wifi);
+        System.out.println("touchable " + samsungA55.touchable);
+        System.out.println("software " + samsungA55.software);
+        System.out.println("camera " + samsungA55.camera);
+        System.out.println("fingerprint " + samsungA55.fingerprint);
+        System.out.println("phonecalls " + samsungA55.phonecalls);
+        System.out.println("textMessages " + samsungA55.textMessages);
+        System.out.println("brand " + samsungA55.brand);
+
+   }
+}
