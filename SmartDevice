@@ -1,0 +1,26 @@
+package Clases;
+
+public class SmartDevice {
+
+   public String pulsometer;
+
+  public String countSteps;
+
+    protected boolean bluetooth;
+    protected boolean wifi;
+    protected boolean touchable;
+    protected String software;
+
+    protected Procesador procesador;
+
+
+    public SmartDevice(){
+    }
+
+    public SmartDevice(boolean bluetooth, boolean wifi, boolean touchable, String software,Procesador procesador) {
+        this.bluetooth = bluetooth;
+        this.wifi = wifi;
+        this.touchable = touchable;
+        this.software = software;
+    }
+}
