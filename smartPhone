@@ -1,0 +1,26 @@
+package Herencia;
+
+import Clases.Procesador;
+import Clases.SmartDevice;
+
+public class Smartphone extends SmartDevice {
+
+    public boolean camera;
+    public boolean fingerprint;
+    public boolean phonecalls;
+    public boolean textMessages;
+    public String brand;
+
+    public Smartphone(){
+
+    }
+
+    public Smartphone(boolean bluetooth, boolean wifi, boolean touchable, String software, Procesador procesador, boolean camera, boolean fingerprint, boolean phonecalls, boolean textMessages, String brand) {
+        super(bluetooth, wifi, touchable, software, procesador);
+        this.camera = camera;
+        this.fingerprint = fingerprint;
+        this.phonecalls = phonecalls;
+        this.textMessages = textMessages;
+        this.brand = brand;
+    }
+}
