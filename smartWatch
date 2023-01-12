@@ -1,0 +1,19 @@
+package Herencia;
+
+import Clases.Procesador;
+import Clases.SmartDevice;
+
+public class SmartWatch extends SmartDevice {
+    boolean countSteps;
+    boolean pulsometer;
+
+    public SmartWatch() {
+
+    }
+
+    public SmartWatch(boolean bluetooth, boolean wifi, boolean touchable, String software, Procesador procesador, boolean countSteps, boolean pulsometer) {
+        super(bluetooth, wifi, touchable, software, procesador);
+        this.countSteps = countSteps;
+        this.pulsometer = pulsometer;
+    }
+}
