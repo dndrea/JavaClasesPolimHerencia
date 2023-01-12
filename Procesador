@@ -1,0 +1,17 @@
+package Clases;
+
+public class Procesador {
+
+    String Marca;
+    double frecuencia;
+    int nucleo;
+
+    public Procesador(String marca, double frecuencia, int nucleo) {
+        Marca = marca;
+        this.frecuencia = frecuencia;
+        this.nucleo = nucleo;
+    }
+
+    public Procesador(){
+}
+}
